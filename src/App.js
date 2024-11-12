@@ -15,12 +15,16 @@ function App() {
   const [error, setError] = useState(null); // To track errors
   const [noResults, setNoResults] = useState(false); // To track if no results are found
 
+  console.log(images.length)
 
   return (
     <div className="App">
       {!selectedImage ? (
         <div className='search-body'>
-          <h1 style={{ textAlign: "center" }}>Image Captioning Tool</h1>
+          <h1 style={{ textAlign: "center" }}>
+            <span className='heading'>Image Captioning Tool</span>
+            <span className='details'><b>Nasir Aftab</b><b>nasiraftab123@gmail.com</b></span>
+          </h1>
           <SearchBar
             setImages={setImages}
             SetIsLoading={setIsLoading}
@@ -28,7 +32,12 @@ function App() {
             SetNoResults={setNoResults}
             IsLoading={isLoading}
           />
-
+          <h3
+            style={{
+              display: images.length !== 0 && 'none'
+            }}
+            className='before-search-text'
+          >Search Images to Create Crafts</h3>
           <ImgResults
             images={images} onSelectImage={setSelectedImage}
             IsLoading={isLoading}

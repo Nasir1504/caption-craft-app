@@ -1,0 +1,96 @@
+.side-bar-main-container {
+    position: absolute;
+    left: 110%;
+    // background-color: #fff;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+
+    .add-text-btn {
+        // padding: 1em;
+        background: transparent;
+        color: #fff;
+        font-weight: 500;
+        border: none;
+        display: flex;
+        font-size: 1.2rem;
+        width: 140px;
+        height: 40px;
+        background-color: #1B1C25;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #1B1C25;
+        cursor: pointer;
+    }
+
+    .add-shape-btn-main {
+        position: relative;
+        width: 140px;
+        height: 40px;
+        background-color: #1B1C25;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid #fff;
+
+        .btn-span {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 500;
+            display: flex;
+            gap: 0.6em;
+
+            .arrow {
+                transform: rotate(90deg);
+                font-size: 1.2rem;
+                font-weight: 400;
+                margin-top: 0.1em;
+                color: #ffffff81;
+            }
+        }
+
+        &:hover {
+            .btn-container {
+                display: flex;
+            }
+        }
+
+        .btn-container {
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            height: 200%;
+            background-color: #fff;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            .btn {
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #1B1C25;
+                transition: 0.1s ease-in-out;
+                cursor: pointer;
+                padding: 0.4em;
+                color: #fff;
+                font-size: 1rem;
+
+                &:hover {
+                    background-color: #22232F;
+                }
+            }
+
+        }
+    }
+
+}

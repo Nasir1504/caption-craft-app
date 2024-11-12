@@ -1,0 +1,50 @@
+.canvas-editor-main-container{
+    width: 50%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: #fff;
+
+    .back-btn{
+        position: absolute;
+        top: 0%;
+        left: -10%;
+        width: 2.2rem;
+        height: 0.8em;
+        padding: 0.01em 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 2rem;
+        background: transparent;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .canvas-frame{
+        border: 1px solid #fff;
+        
+    }
+
+    .download-btn{
+        position: absolute;
+        left: 110%;
+        top: 80%;
+        width: 140px;
+        height: 40px;
+        background-color: #25b845;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        text-shadow: 2px 2px 4px #00000062;
+        cursor: pointer;
+    }
+}

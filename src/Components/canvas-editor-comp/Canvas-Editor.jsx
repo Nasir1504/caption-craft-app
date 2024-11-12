@@ -6,12 +6,13 @@ import * as fabric from 'fabric';
 import './canvas-editor.scss';
 
 // components
-import Sidebar from "./Side-Bar";
+import Sidebar from "../side-bar-comp/Side-Bar";
 
 
 const CanvasEditor = ({ image, onBack }) => {
     const canvasRef = useRef(null);
     const fabricCanvasRef = useRef(null); // For the fabric.Canvas instance
+
 
     useEffect(() => {
         const canvas = new fabric.Canvas(canvasRef.current, {
@@ -70,12 +71,16 @@ const CanvasEditor = ({ image, onBack }) => {
     return (
         <div className="canvas-editor-main-container">
             <button className="back-btn" onClick={onBack}>&#8592;</button>
+
             <canvas
                 ref={canvasRef}
                 className="canvas-frame"
             ></canvas>
+
             <Sidebar canvasRef={fabricCanvasRef} />
+
             <button className="download-btn" onClick={handleDownload}>Download</button>
+
         </div>
     );
 };

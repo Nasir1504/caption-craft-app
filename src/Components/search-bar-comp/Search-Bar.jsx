@@ -13,21 +13,7 @@ const SearchBar = ({
     IsLoading
 }) => {
     const [query, setQuery] = useState("");
-    // const [isLoading, setIsLoading] = useState(false); // To track loading state
-    // const [error, setError] = useState(null); // To track errors
-    // const [noResults, setNoResults] = useState(false); // To track if no results are found
-
-
-    // const handleSearch = async () => {
-    //     const API_KEY = "Ja66JikEcDCmBxr_9wGabJ0393gu8_yCTrH97IF6JgU"; // Replace with actual API key
-
-    //     const response = await axios.get(`https://api.unsplash.com/search/photos`, {
-    //         params: { query },
-    //         headers: { Authorization: `Client-ID ${API_KEY}` },
-    //     });
-    //     setImages(response.data.results);
-
-    // };
+  
 
     const handleSearch = async () => {
         if (!query.trim()) return; // Prevent empty search

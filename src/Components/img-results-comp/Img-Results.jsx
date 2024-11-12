@@ -4,7 +4,7 @@ import React from "react";
 import './img-results.scss';
 
 // imgs
-import loadingGif from '../assets/loading-gif.gif';
+import loadingGif from '../../assets/loading-gif.gif';
 
 const ImgResults = ({ images, onSelectImage, IsLoading }) => {
 

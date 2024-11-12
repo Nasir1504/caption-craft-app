@@ -64,6 +64,7 @@ const Sidebar = ({ canvasRef }) => {
 
             <div className="add-shape-btn-main">
                 <span className="btn-span">Shapes <span className="arrow">{'>'}</span></span>
+
                 <div className="btn-container">
                     <button className="btn" onClick={() => addShape("rectangle")}>Rectangle</button>
                     <button className="btn" onClick={() => addShape("circle")}>Circle</button>

@@ -40,13 +40,6 @@ function App() {
               IsLoading={isLoading}
             />
 
-            <h3
-              style={{
-                display: images.length !== 0 && 'none'
-              }}
-              className='before-search-text'
-            >Search Images to Create Crafts</h3>
-
             <img
               style={{
                 display: images.length !== 0 && 'none'
@@ -66,8 +59,10 @@ function App() {
 
             {/* Display "No results found" note */}
             {
-              noResults && !isLoading && (
+              noResults && !isLoading ? (
                 <p className="no-results-message">No results found. Try a different query!</p>
+              ) : (
+                images.length === 0 && <p className="no-results-message">Search Images to Create Crafts</p>
               )
             }
 
